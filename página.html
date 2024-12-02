@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .cambio-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .cambio-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a mi página web</h1>
+    <p id="contenido">Este es el contenido inicial de la página.</p>
+    <button class="cambio-btn" onclick="cambiarContenido()">Cambiar todo</button>
+
+    <script>
+        function cambiarContenido() {
+            // Cambiar título
+            document.querySelector('h1').textContent = "Nuevo Título de Página";
+
+            // Cambiar párrafo
+            document.getElementById('contenido').textContent = "El contenido de la página ha cambiado. ¡Felicidades!";
+
+            // Puedes agregar más cambios aquí, como cambiar imágenes, estilos, etc.
+            document.body.style.backgroundColor = "#f0f0f0";  // Cambiar color de fondo
+        }
+    </script>
+</body>
+</html>
